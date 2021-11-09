@@ -1,24 +1,31 @@
-# vuejs-tailwindcss-portfolio
+# Vue Portfolio
 
-## Project setup
-```
+My latest portfolio build with the Progressive JavaScript Framework [Vuejs](https://vuejs.org)
+
+<!-- TOC -->
+
+- [Vue Portfolio](#vue-portfolio)
+    - [Basic Commands](#basic-commands)
+    - [Live site](#live-site)
+
+<!-- /TOC -->
+
+## Basic Commands
+
+```bash
+# install dependencies
 npm install
-```
 
-### Compiles and hot-reloads for development
-```
+# serve with hot reload at localhost:8080
 npm run serve
-```
 
-### Compiles and minifies for production
-```
+# build for production with minification
 npm run build
-```
 
-### Lints and fixes files
-```
+# lints the project to checks errors
 npm run lint
+
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Live site
+To view my portfolio please visit [https://wpeters.me](https://wpeters.me).

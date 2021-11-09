@@ -1,19 +1,23 @@
 <template>
   <main class="container mx-auto">
-    <AppBanner />
     <ProjectsGrid />
   </main>
 </template>
 
 <script>
-import AppBanner from '@/components/AppBanner.vue'
 import ProjectsGrid from '@/components/ProjectsGrid';
+import feather from 'feather-icons';
 
 export default {
-  name: 'Home',
+  name: 'Projects',
   components: {
-    AppBanner,
     ProjectsGrid
+  },
+  mounted() {
+    feather.replace();
+  },
+  updated() {
+    feather.replace();
   }
 }
 </script>
