@@ -1,7 +1,9 @@
 <template>
   <div :class="appTheme">
     <AppHeader />
-    <router-view :theme="appTheme" />
+    <transition name="fade">
+      <router-view :theme="appTheme" />
+    </transition>
     <back-to-top visibleoffset="600" bottom="40px" right="30px" class="p-2 sm:p-4 bg-blue-500 hover:blue-blue-600 text-white rounded-lg shadow-md"><i data-feather="arrow-up"></i></back-to-top>
     <AppFooter />
   </div>
@@ -32,4 +34,14 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+</style>
