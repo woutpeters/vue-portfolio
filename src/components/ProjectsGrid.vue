@@ -6,10 +6,10 @@
     </div>
     <div class="grid grid-cols-1 sm:grid-cols-4 mt-16 gap-4 xl:gap-8">
       <router-link v-for="project in paginatedProjects" :key="project.id" :to="{name:'details',params:{slug:project.slug}}" class="rounded-lg shadow cursor-pointer mb-4 sm:mb-0 bg-gray-50 dark:bg-ternary-dark">
-      <div>
-        <img v-if="project.image" :src="require(`@/assets/images/${project.image}`)" :alt="project.title" class="rounded-t-lg mx-auto border-none">
+      <div class="card-zoom">
+        <div class="card-zoom-image" v-if="project.image" :style="{'background-image': 'url(' + require(`@/assets/images/${project.image}`) + ')'}"></div>
       </div>
-      <div class="text-center px-4 py-5">
+      <div class="flex flex-col items-center px-4 py-5">
         <p class="text-xl text-ternary-dark dark:text-gray-50 font-semibold mb-2">{{ project.title }}</p>
         <span class="text-sm text-gray-500 dark:text-gray-400">{{ project.category }}</span>
       </div>
@@ -48,4 +48,14 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+.card-zoom {
+  @apply relative overflow-hidden h-64 rounded-t-lg;
+}
+.card-zoom-image {
+  @apply absolute w-full h-full transition-all duration-500 ease-in-out transform bg-center bg-cover;
+}
+.card-zoom:hover .card-zoom-image {
+  @apply scale-125;
+}
+</style>
