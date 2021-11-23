@@ -1,5 +1,5 @@
 <template>
-  <footer class="container mx-auto">
+  <footer class="container">
     <div class="pt-20 sm:pt-30 pb-8 mt-20 border-t-2 border-primary-light dark:border-secondary-dark">
       <div class="flex flex-col justify-center items-center mb-12 sm:mb-20">
         <p class="text-xl font-semibold text-primary-dark dark:text-gray-50 mb-5">Volg mij</p>

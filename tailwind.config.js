@@ -23,6 +23,7 @@ module.exports = {
         'ternary-dark': '#1E3851',
       },
       container: {
+        center: true,
         padding: {
           DEFAULT: '1rem',
           sm: '2rem',

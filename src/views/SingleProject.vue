@@ -1,5 +1,5 @@
 <template>
-  <main class="lg:w-4/6 container mx-auto">
+  <main class="lg:w-4/6 container">
     <ProjectSingleHeader :singleProjectHeader="project" />
     <ProjectSingleInfo :singleProjectInfo="project" />
   </main>

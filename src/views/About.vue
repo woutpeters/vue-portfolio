@@ -1,5 +1,5 @@
 <template>
-  <main class="container mx-auto">
+  <main class="container">
     <div class="block sm:flex sm:gap-10">
       <div class="w-1/2 sm:w-1/4 mb-6 md:mb-0">
         <img src="@/assets/images/profile.jpg" class="rounded-xl w-96 object-cover object-center shadow" alt="Hero image">
