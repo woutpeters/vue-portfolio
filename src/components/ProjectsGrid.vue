@@ -1,7 +1,7 @@
 <template>
   <section class="pt-20 sm:pt-28">
     <div class="text-center">
-      <p class="text-2xl sm:text-3xl font-semibold mb-3 text-ternary-dark dark:text-gray-50">Projects Portfolio</p>
+      <p class="text-2xl sm:text-3xl font-semibold mb-3 text-ternary-dark dark:text-gray-50">Project Portfolio</p>
       <p class="text-gray-500 dark:text-gray-400">Overzicht met de meest recente projecten</p>
     </div>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mt-16 gap-4 xl:gap-8">
@@ -16,7 +16,7 @@
       </router-link>
     </div>
     <div class="mt-10 sm:mt-20 flex justify-center">
-      <button v-if="showMore" @click="loadMore" class="flex items-center py-2 px-6 rounded bg-blue-500 hover:bg-blue-600 text-white text-lg">Meer projecten</button>
+      <button v-if="showMore" @click="loadMore" class="flex items-center py-2 px-6 rounded bg-blue-500 hover:bg-blue-600 text-white text-lg transition-colors">Meer projecten</button>
     </div>
   </section>
 </template>

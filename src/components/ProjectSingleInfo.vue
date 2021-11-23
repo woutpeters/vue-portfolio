@@ -4,7 +4,7 @@
       <div class="flex flex-col items-center text-center justify-center">
         <h2 class="font-semibold title-font mt-4 text-ternary-dark dark:text-gray-50 text-lg">{{singleProjectInfo.author}}</h2>
         <div class="w-12 h-1 bg-blue-500 rounded mt-2 mb-4"></div>
-        <p class="inline-flex items-center text-base text-gray-500 dark:text-gray-400"><i data-feather="tag" class="w-4 h-4 mr-1"></i>{{singleProjectInfo.category}}</p>
+        <p class="inline-flex items-center text-sm text-gray-500 dark:text-gray-400"><i data-feather="tag" class="w-4 h-4 mr-1"></i>{{singleProjectInfo.category}}</p>
       </div>
     </div>
     <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l-2 border-primary-light dark:border-secondary-dark sm:border-t-0 border-t-2 mt-4 pt-4 sm:mt-0 text-center sm:text-left">

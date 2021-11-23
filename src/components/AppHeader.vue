@@ -17,9 +17,9 @@
         </div>
       </div>
       <div :class="isOpen ? 'block' : 'hidden'" class="m-0 sm:ml-4 mt-5 sm:mt-0 sm:flex p-5 sm:p-0 justify-center items-center shadow sm:shadow-none">
-        <router-link to="/projects" class="block text-left sm:text-lg font-medium text-primary-dark hover:text-blue-400 dark:text-gray-50 dark:hover:text-blue-400 sm:mx-4 mb-2 sm:mb-0 sm:py-2">Projecten</router-link>
-        <router-link to="/about" class="block text-left sm:text-lg font-medium text-primary-dark hover:text-blue-400 dark:text-gray-50 dark:hover:text-blue-400 sm:mx-4 mb-2 sm:mb-0 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark">Over mij</router-link>
-        <router-link to="/contact" class="block text-left sm:text-lg font-medium text-primary-dark hover:text-blue-400 dark:text-gray-50 dark:hover:text-blue-400 sm:mx-4 mb-2 sm:mb-0 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark">Contact</router-link>
+        <router-link to="/projects" class="nav-link sm:text-lg text-primary-dark dark:text-gray-50 dark:hover:text-blue-400 md:hover:bg-blue-50 sm:mx-2 mb-2 sm:mb-0 sm:py-2 sm:px-2 rounded hover:translate-y-0.5">Projecten</router-link>
+        <router-link to="/about" class="nav-link sm:text-lg text-primary-dark dark:text-gray-50 dark:hover:text-blue-400 md:hover:bg-blue-50 sm:mx-2 mb-2 sm:mb-0 sm:py-2 sm:px-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark rounded hover:translate-y-0.5">Over mij</router-link>
+        <router-link to="/contact" class="nav-link sm:text-lg text-primary-dark dark:text-gray-50 dark:hover:text-blue-400 md:hover:bg-blue-50 sm:mx-2 mb-2 sm:mb-0 sm:py-2 sm:px-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark rounded hover:translate-y-0.5">Contact</router-link>
       </div>
       <div class="hidden sm:flex justify-between items-center flex-col md:flex-row">
         <theme-switcher :theme="theme" @themeChanged="updateTheme" class="ml-8 text-gray-400 hover:text-blue-400 bg-gray-50 dark:bg-ternary-dark hover:bg-gray-100 px-2.5 py-2 rounded-lg shadow cursor-pointer" />
@@ -66,5 +66,8 @@ export default {
 #nav a.router-link-exact-active {
 	@apply text-blue-500;
 	@apply dark:text-blue-400;
+}
+.nav-link {
+  @apply block text-left font-medium transition-transform transform-gpu;
 }
 </style>
