@@ -11,10 +11,16 @@
       </div>
     </div>
   </main>
+  <AboutTools />
 </template>
 
 <script>
+import AboutTools from '@/components/AboutTools';
 export default {
+  name: 'About',
+  components: {
+		AboutTools
+	},
 }
 </script>
 

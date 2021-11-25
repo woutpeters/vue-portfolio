@@ -1,13 +1,13 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
-  purge: [
-    './src/**/*.vue',
-    './src/**/*.js',
-    './src/**/*.jsx',
-    './src/**/*.html',
-    './src/**/*.md',
-  ],
+  purge: {
+    enabled: true,
+    content: ['./src/**/*.vue','./src/**/*.js','./src/**/*.jsx','./src/**/*.html','./src/**/*.md',], 
+    options: {
+      safelist: [/^carousel/],
+    }
+  },
   darkMode: 'class',
   theme: {
     fontFamily: {

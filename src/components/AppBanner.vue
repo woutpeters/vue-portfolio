@@ -7,7 +7,7 @@
         <router-link class="inline-flex text-gray-700 bg-gray-100 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg transition-colors" :to="{name: 'contact'}">Contact</router-link>
       </div>
     </div>
-    <div class="lg:max-w-md lg:w-full md:w-1/2 w-5/6">
+    <div class="lg:max-w-md lg:w-full md:w-1/2 w-5/6 sm:ml-3">
       <img v-if="theme === 'light'" src="@/assets/images/designer.svg" class="object-cover object-center rounded" alt="hero">
       <img v-else src="@/assets/images/designer-dark.svg" class="object-cover object-center rounded" alt="hero">
     </div>

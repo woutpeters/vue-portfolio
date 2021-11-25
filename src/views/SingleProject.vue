@@ -25,6 +25,7 @@ export default {
   },
   mounted() {
     feather.replace();
+    window.scrollTo(0, 0);
   },
   updated() {
     feather.replace();
