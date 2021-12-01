@@ -11,12 +11,12 @@
         </div>
         <div class="flex flex-col flex-1 items-center justify-center text-center px-4 py-5">
           <p class="text-xl text-ternary-dark dark:text-gray-50 font-semibold mb-2">{{ project.title }}</p>
-          <span class="text-sm bg-gray-100 dark:bg-secondary-dark text-gray-400 rounded p-1 inline-flex items-center"><i data-feather="tag" class="w-4 h-4 mr-1"></i>{{ project.category }}</span>
+          <span class="text-sm bg-white dark:bg-secondary-dark text-gray-500 rounded p-1 inline-flex items-center"><i data-feather="tag" class="w-4 h-4 mr-1"></i>{{ project.category }}</span>
         </div>
       </router-link>
     </div>
     <div class="mt-10 sm:mt-20 flex justify-center">
-      <button v-if="showMore" @click="loadMore" class="flex items-center py-2 px-6 rounded bg-blue-500 hover:bg-blue-600 text-white text-lg transition-colors">Meer projecten</button>
+      <button v-if="showMore" @click="loadMore" class="flex items-center py-2 px-6 rounded bg-blue-600 hover:bg-blue-700 text-white text-lg transition-colors">Meer projecten</button>
     </div>
   </section>
 </template>

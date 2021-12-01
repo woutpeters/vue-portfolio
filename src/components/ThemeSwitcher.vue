@@ -1,5 +1,5 @@
 <template>
-  <a href="#" @click="toggleTheme" aria-label="Theme Switcher">
+  <a href="#" @click.prevent="toggleTheme" aria-label="Theme Switcher">
     <i v-if="theme === 'light'" data-feather="moon" class="h-5 w-5"></i>
     <i v-else data-feather="sun" class="h-5 w-5"></i>
   </a>

@@ -3,13 +3,13 @@
     <div class="pt-20 sm:pt-30 pb-8 mt-20 border-t-2 border-primary-light dark:border-secondary-dark">
       <div class="flex flex-col justify-center items-center mb-12 sm:mb-20">
         <p class="text-xl font-semibold text-primary-dark dark:text-gray-50 mb-5">Volg mij</p>
-        <ul class="flex gap-4 xl:gap-8">
-          <a v-for="social in socials" :key="social.id" :href="social.url" target="_blank" class="text-gray-400 hover:text-blue-400 cursor-pointer rounded-lg shadow bg-gray-50 dark:bg-ternary-dark hover:bg-gray-100 p-4">
+        <div class="flex gap-4 xl:gap-8">
+          <a v-for="social in socials" :key="social.id" :href="social.url" :aria-label="social.name" target="_blank" class="text-gray-400 hover:text-blue-400 cursor-pointer rounded-lg shadow bg-gray-50 dark:bg-ternary-dark hover:bg-gray-100 p-4">
             <i :data-feather="social.icon" class="w-6 sm:w-8 h-6 sm:h-8"></i>
           </a>
-        </ul>
         </div>
-        <div class="flex justify-center items-center text-center">
+      </div>
+      <div class="flex justify-center items-center text-center">
         <div class="text-base text-ternary-dark dark:text-gray-400">
           &copy; Copyright {{ copyrightDate }}
           <a href="https://wpeters.me/" target="_blank" class="text-secondary-dark dark:text-gray-50 font-medium hover:underline">wpeters.me</a>
