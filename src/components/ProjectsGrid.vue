@@ -58,6 +58,7 @@ export default {
 <style scoped>
 .card-zoom {
   @apply relative overflow-hidden h-64 rounded-t-lg;
+  will-change: transform;
 }
 .card-zoom-image {
   @apply absolute w-full h-full transition-all duration-500 ease-in-out transform bg-center bg-cover;
