@@ -4,7 +4,7 @@
       <div class="flex flex-col justify-center items-center mb-12 sm:mb-20">
         <p class="text-xl font-semibold text-primary-dark dark:text-gray-50 mb-5">Volg mij</p>
         <div class="flex gap-4 xl:gap-8">
-          <a v-for="social in socials" :key="social.id" :href="social.url" :aria-label="social.name" target="_blank" class="text-gray-400 hover:text-blue-400 cursor-pointer rounded-lg shadow bg-gray-50 dark:bg-ternary-dark hover:bg-gray-100 p-4">
+          <a v-for="social in socials" :key="social.id" :href="social.url" :aria-label="social.name" target="_blank" rel="noreferrer noopener" class="text-gray-400 hover:text-blue-400 cursor-pointer rounded-lg shadow bg-gray-50 dark:bg-ternary-dark hover:bg-gray-100 p-4">
             <i :data-feather="social.icon" class="w-6 sm:w-8 h-6 sm:h-8"></i>
           </a>
         </div>
