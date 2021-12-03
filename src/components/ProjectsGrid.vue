@@ -4,7 +4,7 @@
       <p class="text-2xl sm:text-3xl font-semibold mb-3 text-ternary-dark dark:text-gray-50">Project Portfolio</p>
       <p class="text-gray-500 dark:text-gray-400">Overzicht met de meest recente projecten</p>
     </div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mt-16 gap-4 xl:gap-8">
+    <transition-group name="list" tag="div" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mt-16 gap-4 xl:gap-8">
       <router-link v-for="project in paginatedProjects" :key="project.id" :to="{name:'details',params:{slug:project.slug}}" class="rounded-lg shadow cursor-pointer mb-4 sm:mb-0 bg-gray-50 dark:bg-ternary-dark flex flex-col">
         <div class="card-zoom">
           <div class="card-zoom-image" v-if="project.image" :style="{'background-image': 'url(' + require(`@/assets/images/${project.image}`) + ')'}"></div>
@@ -14,7 +14,7 @@
           <span class="text-sm bg-white dark:bg-secondary-dark text-gray-500 rounded p-1 inline-flex items-center"><i data-feather="tag" class="w-4 h-4 mr-1"></i>{{ project.category }}</span>
         </div>
       </router-link>
-    </div>
+    </transition-group>
     <div class="mt-10 sm:mt-20 flex justify-center">
       <button v-if="showMore" @click="loadMore" class="flex items-center py-2 px-6 rounded bg-blue-600 hover:bg-blue-700 text-white text-lg transition-colors">Meer projecten</button>
     </div>
@@ -64,5 +64,14 @@ export default {
 }
 .card-zoom:hover .card-zoom-image {
   @apply scale-125;
+}
+.list-enter-active,
+.list-leave-active {
+  transition: all 1s ease;
+}
+.list-enter-from,
+.list-leave-to {
+  opacity: 0;
+  transform: translateY(2rem);
 }
 </style>
