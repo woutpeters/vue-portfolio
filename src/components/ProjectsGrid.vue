@@ -16,7 +16,7 @@
       </router-link>
     </transition-group>
     <div class="mt-10 sm:mt-20 flex justify-center">
-      <button v-if="showMore" @click="loadMore" class="flex items-center py-2 px-6 rounded bg-blue-600 hover:bg-blue-700 text-white text-lg transition-colors">Meer projecten</button>
+      <button v-if="showMore" @click="loadMore" class="flex items-center py-2.5 px-5 rounded bg-blue-600 hover:bg-blue-700 text-white transition-colors">Meer projecten</button>
     </div>
   </section>
 </template>
