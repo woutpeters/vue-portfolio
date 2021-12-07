@@ -6,3 +6,23 @@ h5,
 h6 {
     @apply font-serif;
 }
+
+.btn {
+    @apply py-3 px-7 rounded-lg shadow-md text-white transition-colors;
+}
+
+.btn-primary {
+    @apply bg-teal-500;
+}
+
+.btn-primary:hover {
+    @apply bg-teal-600;
+}
+
+.btn-secondary {
+    @apply bg-blue-gray-700;
+}
+
+.btn-secondary:hover {
+    @apply bg-blue-gray-600;
+}
