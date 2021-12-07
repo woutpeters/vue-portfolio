@@ -1,29 +1,29 @@
 <template>
   <div class="bg-cool-gray-50 dark:bg-blue-gray-800">
     <nav id="nav" class="container">
-      <div class="z-10 block sm:flex sm:justify-between sm:items-center py-7 sm:py-6">
-        <div class="flex justify-between items-center px-0">
+      <div class="z-10 block sm:flex sm:items-center py-8 transition-all">
+        <div class="flex items-center px-0">
           <div>
             <router-link class="block" to="/">
               <img v-if="theme === 'light'" src="@/assets/images/logo-dark.svg" class="w-36" alt="Dark logo">
               <img v-else src="@/assets/images/logo-light.svg" class="w-36" alt="Light logo">
             </router-link>
           </div>
-          <theme-switcher :theme="theme" @themeChanged="updateTheme" class="block sm:hidden ml-10 btn btn-secondary cursor-pointer" />
+          <theme-switcher :theme="theme" @themeChanged="updateTheme" class="block sm:hidden ml-auto btn btn-secondary dark:btn-secondary-dark cursor-pointer" />
           <div class="sm:hidden">
-            <button @click="isOpen = !isOpen" type="button" class="focus:ouline-none">
-              <span v-if="isOpen" class="h-7 w-7"><i data-feather="x"></i></span>
-              <span v-if="!isOpen" class="h-7 w-7"><i data-feather="menu"></i></span>
+            <button @click="isOpen = !isOpen" type="button" class="bg-white dark:btn-primary shadow-md rounded-lg ml-4 p-2 text-cool-gray-600 dark:text-cool-gray-50 focus:ouline-none">
+              <span v-if="isOpen" class="h-7 w-7 flex justify-center items-center"><i data-feather="x"></i></span>
+              <span v-if="!isOpen" class="h-7 w-7 flex justify-center items-center"><i data-feather="menu"></i></span>
             </button>
           </div>
         </div>
-        <div :class="isOpen ? 'block' : 'hidden'" class="m-0 sm:ml-4 mt-5 sm:mt-0 sm:flex p-5 sm:p-0 justify-center items-center shadow sm:shadow-none">
-          <router-link to="/projects" class="nav-link sm:text-lg dark:text-gray-50 dark:hover:text-blue-400 md:hover:bg-blue-50 sm:mx-2 mb-2 sm:mb-0 sm:py-2 sm:px-2 rounded hover:translate-y-0.5">Projecten</router-link>
-          <router-link to="/about" class="nav-link sm:text-lg dark:text-gray-50 dark:hover:text-blue-400 md:hover:bg-blue-50 sm:mx-2 mb-2 sm:mb-0 sm:py-2 sm:px-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 rounded hover:translate-y-0.5">Over mij</router-link>
-          <router-link to="/contact" class="nav-link sm:text-lg dark:text-gray-50 dark:hover:text-blue-400 md:hover:bg-blue-50 sm:mx-2 mb-2 sm:mb-0 sm:py-2 sm:px-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 rounded hover:translate-y-0.5">Contact</router-link>
+        <div :class="isOpen ? 'block' : 'hidden'" class="bg-white sm:bg-transparent dark:bg-blue-gray-700 sm:dark:bg-transparent m-0 sm:ml-auto mt-8 sm:mt-0 sm:flex flex-col sm:flex-row p-4 sm:p-0 justify-center items-center shadow sm:shadow-none rounded-lg">
+          <router-link to="/projects" class="block w-full sm:w-auto sm:text-lg text-cool-gray-600 dark:text-cool-gray-50 hover:text-teal-500 dark:hover:text-teal-500 transition-colors sm:mx-2 mb-2 sm:mb-0 sm:py-2 sm:px-2">Projecten</router-link>
+          <router-link to="/about" class="block w-full sm:w-auto sm:text-lg text-cool-gray-600 dark:text-cool-gray-50 hover:text-teal-500 dark:hover:text-teal-500 transition-colors sm:mx-2 mb-2 sm:mb-0 sm:py-2 sm:px-2 border-t-2 border-cool-gray-50 dark:border-blue-gray-800 pt-3 sm:pt-2 sm:border-t-0">Over mij</router-link>
+          <router-link to="/contact" class="block w-full sm:w-auto sm:text-lg text-cool-gray-600 dark:text-cool-gray-50 hover:text-teal-500 dark:hover:text-teal-500 transition-colors sm:mx-2 mb-2 sm:mb-0 sm:py-2 sm:px-2 border-t-2 border-cool-gray-50 dark:border-blue-gray-800 pt-3 sm:pt-2 sm:border-t-0">Contact</router-link>
         </div>
         <div class="hidden sm:flex justify-between items-center flex-col md:flex-row">
-          <theme-switcher :theme="theme" @themeChanged="updateTheme" class="ml-8 btn btn-secondary cursor-pointer" />
+          <theme-switcher :theme="theme" @themeChanged="updateTheme" class="ml-10 md:ml-16 btn btn-secondary dark:btn-secondary-dark cursor-pointer" />
         </div>
       </div>
     </nav>
@@ -43,7 +43,6 @@ export default {
     return {
       isOpen: false,
       theme: '',
-      modal: false,
     };
   },
   created() {
@@ -66,10 +65,7 @@ export default {
 
 <style scoped>
 #nav a.router-link-exact-active {
-	@apply text-blue-500;
-	@apply dark:text-blue-400;
-}
-.nav-link {
-  @apply block text-left font-medium transition-transform transform-gpu;
+	@apply text-teal-500;
+	@apply dark:text-teal-500;
 }
 </style>

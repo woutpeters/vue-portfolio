@@ -1,18 +1,18 @@
 <template>
   <footer class="bg-cool-gray-50 dark:bg-blue-gray-800">
-    <div class="container pt-20 sm:pt-30 pb-8">
-      <div class="flex flex-col justify-center items-center mb-12 sm:mb-20">
+    <div class="container py-10 sm:py-16">
+      <div class="flex flex-col justify-center items-center mb-10 sm:mb-16">
         <p class="text-xl font-semibold dark:text-gray-50 mb-5">Volg mij</p>
         <div class="flex flex-col sm:flex-row gap-4 xl:gap-8">
-          <a v-for="social in socials" :key="social.id" :href="social.url" :aria-label="social.name" target="_blank" rel="noreferrer noopener" class="btn-secondary text-cool-gray-400 cursor-pointer rounded-lg shadow-md transition-colors p-4">
+          <a v-for="social in socials" :key="social.id" :href="social.url" :aria-label="social.name" target="_blank" rel="noreferrer noopener" class="btn-secondary dark:btn-secondary-dark text-cool-gray-50 dark:text-cool-gray-400 cursor-pointer rounded-lg shadow-md transition-colors p-4">
             <i :data-feather="social.icon" class="w-6 sm:w-8 h-6 sm:h-8"></i>
           </a>
         </div>
       </div>
       <div class="flex justify-center items-center text-center">
-        <div class="text-base dark:text-gray-400">
+        <div class="text-base text-cool-gray-400">
           &copy; Copyright {{ copyrightDate }}
-          <a href="https://wpeters.me/" target="_blank" class="dark:text-gray-50 font-medium hover:underline">wpeters.me</a>
+          <a href="https://wpeters.me/" target="_blank" class="dark:text-cool-gray-50 font-medium hover:underline">wpeters.me</a>
         </div>
       </div>
     </div>
