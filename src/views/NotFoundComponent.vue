@@ -1,18 +1,19 @@
 <template>
-  <div class="overflow-hidden relative">
-    <div class="h-96 w-full flex flex-wrap justify-center content-center items-center absolute z-0">
-      <svg class="w-full p-6 lg:p-64 fill-current text-gray-300 dark:text-gray-500" viewBox="0 0 445 202" xmlns="http://www.w3.org/2000/svg">
-        <path d="M137.587 154.953h-22.102V197h-37.6v-42.047H.53v-33.557L72.36 2.803h43.125V124.9h22.102v30.053zM77.886 124.9V40.537L28.966 124.9h48.92zm116.707-23.718c0 22.46 1.842 39.643 5.525 51.547 3.684 11.905 11.23 17.857 22.64 17.857 11.411 0 18.89-5.952 22.44-17.857 3.548-11.904 5.323-29.086 5.323-51.547 0-23.54-1.775-40.97-5.324-52.29s-11.028-16.98-22.438-16.98c-11.41 0-18.957 5.66-22.64 16.98-3.684 11.32-5.526 28.75-5.526 52.29zM222.759.242c24.887 0 42.339 8.76 52.356 26.28 10.018 17.52 15.027 42.406 15.027 74.66s-5.01 57.095-15.027 74.525c-10.017 17.43-27.47 26.145-52.356 26.145-24.887 0-42.339-8.715-52.357-26.145-10.017-17.43-15.026-42.271-15.026-74.525 0-32.254 5.009-57.14 15.026-74.66C180.42 9.001 197.872.241 222.76.241zm221.824 154.711h-22.102V197h-37.6v-42.047h-77.355v-33.557l71.83-118.593h43.125V124.9h22.102v30.053zM384.882 124.9V40.537l-48.92 84.363h48.92z" fill-rule="nonzero" />
-      </svg>
-    </div>
-    <div class="h-96 w-full flex flex-wrap justify-center content-end md:content-center items-end md:items-center relative z-10">
-      <div class="p-6 text-center ">
-        <h2 class="text-xl lg:text-4xl font-bold dark:text-gray-50">Sorry, de pagina die u zoekt kan niet worden gevonden</h2>
-        <p class="mt-3 text-sm lg:text-base text-gray-900 dark:text-gray-100">We hebben ons best gedaan, maar het lijkt erop dat deze pagina niet (meer) bestaat of misschien verhuisd is.</p>
-        <router-link class="mt-6 bg-blue-600 hover:bg-blue-700 text-white transition-colors px-5 py-2.5 rounded inline-block shadow-2xl" :to="{name: 'home'}">Terug naar de homepage</router-link>
+  <section class="bg-cool-gray-50 dark:bg-blue-gray-800">
+    <img src="@/assets/images/bg-header.png" class="w-screen absolute" alt="Header Backgroud">
+    <div class="container relative flex flex-col justify-center items-center py-32">
+      <div class="lg:max-w-md lg:w-full md:w-1/2 w-5/6">
+        <img src="@/assets/images/artwork/hero-404.png" class="object-cover object-center" alt="Hero 404">
+      </div>
+      <div class="text-center">
+        <h2 class="text-3xl sm:text-4xl text-cool-gray-600 dark:text-cool-gray-50 mb-3 font-semibold">Sorry, de pagina die u zoekt kan niet worden gevonden</h2>
+        <p class="sm:text-xl text-cool-gray-400 mb-16 text-center leading-relaxed">We hebben ons best gedaan, maar het lijkt erop dat deze pagina niet (meer) bestaat of misschien verhuisd is.</p>
+        <div class="flex justify-center">
+          <router-link class="btn btn-primary" :to="{name: 'home'}">Terug naar de homepage</router-link>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
