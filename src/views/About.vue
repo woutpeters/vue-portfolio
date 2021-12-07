@@ -5,7 +5,7 @@
       <div class="block sm:flex sm:gap-24 lg:gap-48">
         <div class="sm:w-3/4 flex flex-col md:items-start">
           <div class="w-64">
-            <img src="@/assets/images/artwork/hero-projects.png" class="object-cover object-center" alt="Hero 404">
+            <img src="@/assets/images/artwork/hero-about.png" class="object-cover object-center" alt="Hero about">
           </div>
           <div class="text-left">
             <h2 class="text-3xl sm:text-4xl text-cool-gray-600 dark:text-cool-gray-50 mb-2 font-semibold">Aangenaam!</h2>
