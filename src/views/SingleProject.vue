@@ -1,7 +1,8 @@
 <template>
-  <main class="lg:w-4/6 container">
+  <main>
     <ProjectSingleHeader :singleProjectHeader="project" />
     <ProjectSingleInfo :singleProjectInfo="project" />
+    <ProjectSingleImages v-if="project.title" :singleProjectImages="project" />
   </main>
 </template>
 
@@ -9,6 +10,7 @@
 import projectList from "@/assets/data/list.json";
 import ProjectSingleHeader from '@/components/ProjectSingleHeader.vue';
 import ProjectSingleInfo from '@/components/ProjectSingleInfo.vue';
+import ProjectSingleImages from '@/components/ProjectSingleImages.vue';
 import feather from 'feather-icons';
 
 export default {
@@ -16,6 +18,7 @@ export default {
   components: {
     ProjectSingleHeader,
     ProjectSingleInfo,
+    ProjectSingleImages,
   },
   props: ['slug'],
 	data() {
