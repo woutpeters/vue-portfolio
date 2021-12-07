@@ -5,8 +5,8 @@
         <div class="flex items-center px-0">
           <div>
             <router-link class="block" to="/">
-              <img v-if="theme === 'light'" src="@/assets/images/logo-dark.svg" class="w-36" alt="Dark logo">
-              <img v-else src="@/assets/images/logo-light.svg" class="w-36" alt="Light logo">
+              <img v-if="theme === 'light'" src="@/assets/images/logo-light.svg" class="w-32" alt="Light logo">
+              <img v-else src="@/assets/images/logo-dark.svg" class="w-32" alt="Dark logo">
             </router-link>
           </div>
           <theme-switcher :theme="theme" @themeChanged="updateTheme" class="block sm:hidden ml-auto btn btn-secondary dark:btn-secondary-dark cursor-pointer" />
