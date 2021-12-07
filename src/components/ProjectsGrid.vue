@@ -1,22 +1,24 @@
 <template>
-  <section class="pt-20 sm:pt-28">
-    <div class="text-center">
-      <p class="text-2xl sm:text-3xl font-semibold mb-3 dark:text-gray-50">Project Portfolio</p>
-      <p class="text-gray-500 dark:text-gray-400">Overzicht met de meest recente projecten</p>
-    </div>
-    <transition-group name="list" tag="div" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mt-16 gap-4 xl:gap-8">
-      <router-link v-for="project in paginatedProjects" :key="project.id" :to="{name:'details',params:{slug:project.slug}}" class="rounded-lg shadow cursor-pointer mb-4 sm:mb-0 bg-gray-50 flex flex-col">
-        <div class="card-zoom">
-          <div class="card-zoom-image" v-if="project.image" :style="{'background-image': 'url(' + require(`@/assets/images/${project.image}`) + ')'}"></div>
-        </div>
-        <div class="flex flex-col flex-1 items-center justify-center text-center px-4 py-5">
-          <p class="text-xl dark:text-gray-50 font-semibold mb-2">{{ project.title }}</p>
-          <span class="text-sm bg-white text-gray-500 rounded p-1 inline-flex items-center"><i data-feather="tag" class="w-4 h-4 mr-1"></i>{{ project.category }}</span>
-        </div>
-      </router-link>
-    </transition-group>
-    <div class="mt-10 sm:mt-20 flex justify-center">
-      <button v-if="showMore" @click="loadMore" class="flex items-center py-2.5 px-5 rounded bg-blue-600 hover:bg-blue-700 text-white transition-colors">Meer projecten</button>
+  <section class="bg-white dark:bg-blue-gray-800 dark:bg-opacity-95">
+    <div class="container py-10 sm:py-16">
+      <div class="text-left">
+        <h2 class="text-3xl sm:text-4xl font-semibold text-cool-gray-600 dark:text-cool-gray-50 mb-3 ">Project Portfolio</h2>
+        <p class="sm:text-xl text-cool-gray-400">Overzicht met de meest recente projecten</p>
+      </div>
+      <transition-group name="list" tag="div" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mt-16 gap-4 xl:gap-8">
+        <router-link v-for="project in paginatedProjects" :key="project.id" :to="{name:'details',params:{slug:project.slug}}" class="rounded-lg shadow cursor-pointer mb-4 sm:mb-0 bg-cool-gray-50 dark:bg-blue-gray-700 flex flex-col">
+          <div class="card-zoom">
+            <div class="card-zoom-image" v-if="project.image" :style="{'background-image': 'url(' + require(`@/assets/images/${project.image}`) + ')'}"></div>
+          </div>
+          <div class="flex flex-col flex-1 items-center justify-center text-center px-4 py-5">
+            <h4 class="text-xl text-cool-gray-600 dark:text-cool-gray-50 font-semibold mb-2">{{ project.title }}</h4>
+            <span class="text-sm text-cool-gray-400 inline-flex items-center"><i data-feather="tag" class="w-4 h-4 mr-1"></i>{{ project.category }}</span>
+          </div>
+        </router-link>
+      </transition-group>
+      <div class="mt-10 sm:mt-16 flex justify-center">
+        <button v-if="showMore" @click="loadMore" class="flex items-center py-2.5 px-5 rounded bg-blue-600 hover:bg-blue-700 text-white transition-colors">Meer projecten</button>
+      </div>
     </div>
   </section>
 </template>

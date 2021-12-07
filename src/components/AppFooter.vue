@@ -1,6 +1,6 @@
 <template>
-  <footer class="container">
-    <div class="pt-20 sm:pt-30 pb-8 mt-20 border-t-2">
+  <footer class="bg-cool-gray-50 dark:bg-blue-gray-800">
+    <div class="container pt-20 sm:pt-30 pb-8">
       <div class="flex flex-col justify-center items-center mb-12 sm:mb-20">
         <p class="text-xl font-semibold dark:text-gray-50 mb-5">Volg mij</p>
         <div class="flex gap-4 xl:gap-8">
