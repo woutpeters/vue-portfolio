@@ -49,7 +49,7 @@ export default {
         {
           id: 4,
           name: 'LinkedIn',
-          icon: 'feather',
+          icon: 'linkedin',
           url: 'https://www.linkedin.com/in/wout-peters-69531457',
         },
       ],

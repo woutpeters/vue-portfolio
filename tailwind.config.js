@@ -11,7 +11,8 @@ module.exports = {
   darkMode: 'class',
   theme: {
     fontFamily: {
-      'sans': ['Inter', ...defaultTheme.fontFamily.sans],
+      'sans': ['Outfit', ...defaultTheme.fontFamily.sans],
+      'serif': ['Vollkorn', ...defaultTheme.fontFamily.serif]
     },
     extend: {
       colors: {
@@ -24,13 +25,7 @@ module.exports = {
       },
       container: {
         center: true,
-        padding: {
-          DEFAULT: '1rem',
-          sm: '2rem',
-          lg: '5rem',
-          xl: '6rem',
-          '2xl': '8rem',
-        },
+        padding: '1rem',
       },
     },
   },
