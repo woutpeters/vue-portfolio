@@ -9,7 +9,7 @@
       <div class="w-full sm:w-1/3">
         <h1 class="text-3xl sm:text-4xl dark:text-gray-50 mb-2 text-center font-semibold">Hallo, ik ben Wout 👋</h1>
         <p class="sm:text-xl text-gray-500 dark:text-gray-400 mb-16 text-center leading-relaxed">Front-end Developer & Designer</p>
-        <div class="flex justify-center gap-4">
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
           <router-link class="btn btn-primary text-lg" :to="{name: 'projects'}">Bekijk projecten</router-link>
           <router-link class="btn btn-secondary text-lg" :to="{name: 'contact'}">Contact</router-link>
         </div>

@@ -10,14 +10,14 @@
           <div class="card-zoom">
             <div class="card-zoom-image" v-if="project.image" :style="{'background-image': 'url(' + require(`@/assets/images/${project.image}`) + ')'}"></div>
           </div>
-          <div class="flex flex-col flex-1 items-center justify-center text-center px-4 py-5">
+          <div class="flex flex-col flex-1 items-center justify-center text-center px-4 py-8">
             <h4 class="text-xl text-cool-gray-600 dark:text-cool-gray-50 font-semibold mb-2">{{ project.title }}</h4>
             <span class="text-sm text-cool-gray-400 inline-flex items-center"><i data-feather="tag" class="w-4 h-4 mr-1"></i>{{ project.category }}</span>
           </div>
         </router-link>
       </transition-group>
       <div class="mt-10 sm:mt-16 flex justify-center">
-        <button v-if="showMore" @click="loadMore" class="flex items-center py-2.5 px-5 rounded bg-blue-600 hover:bg-blue-700 text-white transition-colors">Meer projecten</button>
+        <button v-if="showMore" @click="loadMore" class="btn btn-primary text-lg">Meer projecten</button>
       </div>
     </div>
   </section>

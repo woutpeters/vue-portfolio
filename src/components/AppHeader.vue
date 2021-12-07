@@ -9,7 +9,7 @@
               <img v-else src="@/assets/images/logo-light.svg" class="w-36" alt="Light logo">
             </router-link>
           </div>
-          <theme-switcher :theme="theme" @themeChanged="updateTheme" class="block sm:hidden ml-10 text-gray-400 hover:text-blue-400 bg-gray-50 hover:bg-gray-100 px-2.5 py-2 rounded-lg shadow" />
+          <theme-switcher :theme="theme" @themeChanged="updateTheme" class="block sm:hidden ml-10 btn btn-secondary cursor-pointer" />
           <div class="sm:hidden">
             <button @click="isOpen = !isOpen" type="button" class="focus:ouline-none">
               <span v-if="isOpen" class="h-7 w-7"><i data-feather="x"></i></span>
@@ -23,7 +23,7 @@
           <router-link to="/contact" class="nav-link sm:text-lg dark:text-gray-50 dark:hover:text-blue-400 md:hover:bg-blue-50 sm:mx-2 mb-2 sm:mb-0 sm:py-2 sm:px-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 rounded hover:translate-y-0.5">Contact</router-link>
         </div>
         <div class="hidden sm:flex justify-between items-center flex-col md:flex-row">
-          <theme-switcher :theme="theme" @themeChanged="updateTheme" class="ml-8 text-gray-400 hover:text-blue-400 bg-gray-50 hover:bg-gray-100 px-2.5 py-2 rounded-lg shadow cursor-pointer" />
+          <theme-switcher :theme="theme" @themeChanged="updateTheme" class="ml-8 btn btn-secondary cursor-pointer" />
         </div>
       </div>
     </nav>

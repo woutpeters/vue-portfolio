@@ -8,7 +8,7 @@
         </div>
       </transition>
     </router-view>
-    <back-to-top visibleoffset="600" bottom="40px" right="30px" class="p-2 sm:p-4 bg-blue-600 hover:bg-blue-700 text-white rounded-lg shadow-md transition-colors"><i data-feather="arrow-up"></i></back-to-top>
+    <back-to-top visibleoffset="600" bottom="40px" right="30px" class="p-2 sm:p-4 btn-primary text-cool-gray-50 rounded-lg shadow-md transition-colors"><i data-feather="arrow-up"></i></back-to-top>
     <AppFooter />
   </div>
 </template>
