@@ -1,8 +1,8 @@
 <template>
-  <div class="mt-10 sm:mt-20 py-20 bg-primary-light dark:bg-ternary-dark">
+  <div class="mt-10 sm:mt-20 py-20">
     <div class="container">
       <div class="text-center mb-8">
-        <p class="text-2xl sm:text-3xl font-semibold mb-3 text-ternary-dark dark:text-gray-50">Front-end stack</p>
+        <p class="text-2xl sm:text-3xl font-semibold mb-3 dark:text-gray-50">Front-end stack</p>
         <p class="text-gray-500 dark:text-gray-400">Tools en scripttalen die ik gebruik voor mijn projecten</p>
       </div>
       <Carousel v-if="slider.length" :items-to-show="4" :autoplay="4000" :wrap-around="true">

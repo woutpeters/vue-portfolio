@@ -1,17 +1,17 @@
 <template>
   <section class="pt-20 sm:pt-28">
     <div class="text-center">
-      <p class="text-2xl sm:text-3xl font-semibold mb-3 text-ternary-dark dark:text-gray-50">Project Portfolio</p>
+      <p class="text-2xl sm:text-3xl font-semibold mb-3 dark:text-gray-50">Project Portfolio</p>
       <p class="text-gray-500 dark:text-gray-400">Overzicht met de meest recente projecten</p>
     </div>
     <transition-group name="list" tag="div" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mt-16 gap-4 xl:gap-8">
-      <router-link v-for="project in paginatedProjects" :key="project.id" :to="{name:'details',params:{slug:project.slug}}" class="rounded-lg shadow cursor-pointer mb-4 sm:mb-0 bg-gray-50 dark:bg-ternary-dark flex flex-col">
+      <router-link v-for="project in paginatedProjects" :key="project.id" :to="{name:'details',params:{slug:project.slug}}" class="rounded-lg shadow cursor-pointer mb-4 sm:mb-0 bg-gray-50 flex flex-col">
         <div class="card-zoom">
           <div class="card-zoom-image" v-if="project.image" :style="{'background-image': 'url(' + require(`@/assets/images/${project.image}`) + ')'}"></div>
         </div>
         <div class="flex flex-col flex-1 items-center justify-center text-center px-4 py-5">
-          <p class="text-xl text-ternary-dark dark:text-gray-50 font-semibold mb-2">{{ project.title }}</p>
-          <span class="text-sm bg-white dark:bg-secondary-dark text-gray-500 rounded p-1 inline-flex items-center"><i data-feather="tag" class="w-4 h-4 mr-1"></i>{{ project.category }}</span>
+          <p class="text-xl dark:text-gray-50 font-semibold mb-2">{{ project.title }}</p>
+          <span class="text-sm bg-white text-gray-500 rounded p-1 inline-flex items-center"><i data-feather="tag" class="w-4 h-4 mr-1"></i>{{ project.category }}</span>
         </div>
       </router-link>
     </transition-group>

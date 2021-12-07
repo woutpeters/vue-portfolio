@@ -4,8 +4,8 @@
       <iframe style="filter: grayscale(1) contrast(1.2) opacity(0.4);" width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="map" src="https://www.openstreetmap.org/export/embed.html?bbox=5.183143615722657%2C51.3535591955468%2C5.636329650878907%2C51.543345864595416&amp;layer=mapnik"></iframe>
     </div>
     <div class="container py-24 flex">
-      <div class="lg:w-1/3 md:w-1/2 bg-white dark:bg-ternary-dark rounded-lg shadow p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">
-        <h2 class="text-ternary-dark dark:text-gray-50 text-lg mb-1 font-bold">Neem contact op!</h2>
+      <div class="lg:w-1/3 md:w-1/2 bg-white rounded-lg shadow p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">
+        <h2 class="dark:text-gray-50 text-lg mb-1 font-bold">Neem contact op!</h2>
         <p class="leading-relaxed mb-5 text-gray-500 dark:text-gray-400">Stuur een bericht naar info@woutpeters.nl of gebruik onderstaand contact formulier:</p>
         <div class="relative mb-4">
           <label for="email" class="leading-7 text-sm text-gray-400">E-mail</label>

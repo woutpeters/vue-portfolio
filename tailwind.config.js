@@ -1,4 +1,5 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
+const colors = require('tailwindcss/colors');
 
 module.exports = {
   purge: {
@@ -10,27 +11,30 @@ module.exports = {
   },
   darkMode: 'class',
   theme: {
+    extend: {
+      colors: {
+        teal: colors.teal,
+        indigo: colors.indigo,
+        "blue-gray": colors.blueGray,
+        "cool-gray": colors.coolGray,
+      }
+    },
     fontFamily: {
       'sans': ['Outfit', ...defaultTheme.fontFamily.sans],
       'serif': ['Vollkorn', ...defaultTheme.fontFamily.serif]
     },
-    extend: {
-      colors: {
-        'primary-light': '#F7F8FC',
-        'secondary-light': '#FFFFFF',
-        'ternary-light': '#f6f7f8',
-        'primary-dark': '#0D2438',
-        'secondary-dark': '#102D44',
-        'ternary-dark': '#1E3851',
-      },
-      container: {
-        center: true,
-        padding: '1rem',
-      },
-    },
+    container: {
+      center: true,
+      padding: '1rem',
+      screens: {
+        lg: "1440px",
+        xl: "1440px",
+        "2xl": "1440px",
+      }
+    }
   },
   variants: {
-    extend: { opacity: ['disabled'] },
+    extend: {},
   },
   plugins: [require('@tailwindcss/forms')],
 };
