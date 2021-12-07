@@ -1,11 +1,7 @@
 <template>
   <section class="bg-white dark:bg-blue-gray-800 dark:bg-opacity-95">
     <div class="container py-10 sm:py-16">
-      <div class="text-left">
-        <h2 class="text-3xl sm:text-4xl font-semibold text-cool-gray-600 dark:text-cool-gray-50 mb-3 ">Project Portfolio</h2>
-        <p class="sm:text-xl text-cool-gray-400">Overzicht met de meest recente projecten</p>
-      </div>
-      <transition-group name="list" tag="div" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mt-10 sm:mt-16 gap-4 xl:gap-8">
+      <transition-group name="list" tag="div" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 xl:gap-8">
         <router-link v-for="project in paginatedProjects" :key="project.id" :to="{name:'details',params:{slug:project.slug}}" class="rounded-lg shadow cursor-pointer mb-4 sm:mb-0 bg-cool-gray-50 dark:bg-blue-gray-700 flex flex-col">
           <div class="card-zoom">
             <div class="card-zoom-image" v-if="project.image" :style="{'background-image': 'url(' + require(`@/assets/images/${project.image}`) + ')'}"></div>
