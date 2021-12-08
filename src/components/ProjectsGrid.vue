@@ -2,7 +2,7 @@
   <section class="bg-white dark:bg-blue-gray-800 dark:bg-opacity-95" :key="updateKey">
     <div class="container py-10 sm:py-16">
       <transition-group name="list" tag="div" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 xl:gap-8">
-        <router-link v-for="project in paginatedProjects" :key="project.id" :to="{name:'details',params:{slug:project.slug}}" class="rounded-lg shadow cursor-pointer mb-4 sm:mb-0 bg-cool-gray-50 dark:bg-blue-gray-700 flex flex-col">
+        <router-link v-for="project in paginatedProjects" :key="project.id" :to="{name:'details',params:{slug:project.slug}}" class="rounded-lg shadow cursor-pointer bg-cool-gray-50 dark:bg-blue-gray-700 flex flex-col">
           <div class="card-zoom">
             <div class="card-zoom-image" v-if="project.image" :style="{'background-image': 'url(' + require(`@/assets/images/${project.image}`) + ')'}"></div>
           </div>

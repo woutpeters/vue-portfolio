@@ -3,8 +3,8 @@
     <div class="container py-10 sm:py-16">
       <div class="flex flex-col justify-center items-center mb-10 sm:mb-16">
         <p class="text-xl font-semibold dark:text-gray-50 mb-5">Volg mij</p>
-        <div class="flex flex-row gap-2 sm:gap-4 xl:gap-8">
-          <a v-for="social in socials" :key="social.id" :href="social.url" :aria-label="social.name" target="_blank" rel="noreferrer noopener" class="btn-secondary dark:btn-secondary-dark text-cool-gray-50 dark:text-cool-gray-400 cursor-pointer rounded-lg shadow-md transition-colors p-4">
+        <div class="flex flex-row gap-4 xl:gap-8">
+          <a v-for="social in socials" :key="social.id" :href="social.url" :aria-label="social.name" target="_blank" rel="noreferrer noopener" class="btn-secondary dark:btn-secondary-dark text-cool-gray-50 dark:text-cool-gray-400 cursor-pointer rounded-lg shadow-md transition-colors p-2 sm:p-4">
             <i :data-feather="social.icon" class="w-6 sm:w-8 h-6 sm:h-8"></i>
           </a>
         </div>
