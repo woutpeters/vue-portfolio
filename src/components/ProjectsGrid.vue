@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-white dark:bg-blue-gray-800 dark:bg-opacity-95">
+  <section class="bg-white dark:bg-blue-gray-800 dark:bg-opacity-95" :key="updateKey">
     <div class="container py-10 sm:py-16">
       <transition-group name="list" tag="div" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 xl:gap-8">
         <router-link v-for="project in paginatedProjects" :key="project.id" :to="{name:'details',params:{slug:project.slug}}" class="rounded-lg shadow cursor-pointer mb-4 sm:mb-0 bg-cool-gray-50 dark:bg-blue-gray-700 flex flex-col">
@@ -25,8 +25,9 @@ import projectList from "@/assets/data/list.json";
 
 export default {
   name: 'Projects',
-  data() { 
-    return  { 
+  data() {
+    return  {
+      updateKey: 0,
       projects: projectList,
       projectsToShow: 4,
       projectsToAdd: 4,
@@ -42,10 +43,11 @@ export default {
     loadMore() {
       this.projectsToShow += this.projectsToAdd;
       this.showMore = this.projectsToShow < this.projects.length;
+      this.updateKey += 1;
     }
   },
   mounted() {
-		feather.replace();
+    feather.replace();
 	},
   updated() {
     feather.replace();
