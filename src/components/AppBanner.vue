@@ -9,7 +9,7 @@
         <h1 class="text-3xl sm:text-4xl text-cool-gray-600 dark:text-cool-gray-50 mb-2 font-semibold">Hallo, ik ben Wout 👋</h1>
         <p class="sm:text-xl text-cool-gray-400 mb-16 leading-relaxed">Front-end Developer & Designer</p>
         <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-          <button @click="scrollToElement({behavior: 'smooth'})" class="btn btn-primary text-lg">Bekijk projecten</button>
+          <button v-scroll-to="'#intro'" class="btn btn-primary text-lg">Bekijk projecten</button>
           <router-link class="btn btn-secondary dark:btn-secondary-dark text-lg" :to="{name: 'contact'}">Contact</router-link>
         </div>
       </div>
@@ -31,14 +31,7 @@ export default {
   mounted() {
     this.theme = localStorage.getItem('theme') || 'light';
   },
-  methods: {
-		scrollToElement(options) {
-      const el = document.getElementById('intro');
-      if (el) {
-        el.scrollIntoView(options);
-      }
-		}
-	},
+  methods: {},
 };
 </script>
 
