@@ -13,7 +13,7 @@
             <p class="text-cool-gray-400 mb-3 leading-relaxed">In mijn portfolio neem ik websites en projecten op waar ik trots op ben en die ik graag met de buitenwereld deel! Wil je meer weten, dan kom ik graag in <router-link class="dark:text-cool-gray-50 hover:underline" :to="{name: 'contact'}">contact</router-link>. Of bekijk mijn <a href="https://github.com/woutpeters" target="_blank" class="dark:text-cool-gray-50 hover:underline">Github</a> pagina.</p>
           </div>
         </div>
-        <div class="w-1/4 sm:w-1/2">
+        <div class="w-3/4 sm:w-1/2">
           <img src="@/assets/images/profile.jpg" class="rounded-xl w-96 object-cover object-center shadow" alt="Hero image">
         </div>
       </div>

@@ -10,15 +10,15 @@
         <p class="leading-relaxed mb-5 text-cool-gray-400">Stuur een bericht naar info@woutpeters.nl of gebruik onderstaand contact formulier:</p>
         <div class="relative mb-4">
           <label for="name" class="leading-7 text-sm text-cool-gray-400">Naam</label>
-          <input type="text" id="name" name="name" class="w-full bg-white dark:bg-blue-gray-600 rounded border border-cool-gray-400 focus:border-teal-500 focus:ring-2 focus:ring-teal-200 text-base outline-none text-cool-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+          <input type="text" id="name" name="name" class="w-full bg-white dark:bg-blue-gray-600 rounded border border-cool-gray-400 focus:border-teal-500 focus:ring-2 focus:ring-teal-200 text-base outline-none text-cool-gray-600 dark:text-cool-gray-50 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
         </div>
         <div class="relative mb-4">
           <label for="email" class="leading-7 text-sm text-cool-gray-400">E-mail</label>
-          <input type="email" id="email" name="email" class="w-full bg-white dark:bg-blue-gray-600 rounded border border-cool-gray-400 focus:border-teal-500 focus:ring-2 focus:ring-teal-200 text-base outline-none text-cool-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+          <input type="email" id="email" name="email" class="w-full bg-white dark:bg-blue-gray-600 rounded border border-cool-gray-400 focus:border-teal-500 focus:ring-2 focus:ring-teal-200 text-base outline-none text-cool-gray-600 dark:text-cool-gray-50 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
         </div>
         <div class="relative mb-4">
           <label for="message" class="leading-7 text-sm text-cool-gray-400">Bericht</label>
-          <textarea id="message" name="message" class="w-full bg-white dark:bg-blue-gray-600 rounded border border-cool-gray-400 focus:border-teal-500 focus:ring-2 focus:ring-teal-200 h-32 text-base outline-none text-cool-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+          <textarea id="message" name="message" class="w-full bg-white dark:bg-blue-gray-600 rounded border border-cool-gray-400 focus:border-teal-500 focus:ring-2 focus:ring-teal-200 h-32 text-base outline-none text-cool-gray-600 dark:text-cool-gray-50 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
         </div>
         <button class="btn btn-primary text-lg">Verstuur</button>
         <p class="text-xs text-cool-gray-400 mt-3">Contact formulier is momenteel nog in ontwikkeling.</p>
