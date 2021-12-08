@@ -1,7 +1,7 @@
 <template>
   <section class="bg-cool-gray-50 dark:bg-blue-gray-800">
     <img src="@/assets/images/bg-header.png" class="w-screen absolute" alt="Header Backgroud">
-    <div class="container relative flex flex-col justify-center items-center py-32">
+    <div class="container relative flex flex-col justify-center items-center py-16 sm:py-32">
       <div class="lg:max-w-md lg:w-full md:w-1/2 w-5/6">
         <img src="@/assets/images/artwork/hero-404.png" class="object-cover object-center" alt="Hero 404">
       </div>

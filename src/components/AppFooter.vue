@@ -10,9 +10,9 @@
         </div>
       </div>
       <div class="flex justify-center items-center text-center">
-        <div class="text-base text-cool-gray-400">
+        <div class="text-cool-gray-400">
           &copy; Copyright {{ copyrightDate }}
-          <a href="https://wpeters.me/" target="_blank" class="dark:text-cool-gray-50 font-medium hover:underline">wpeters.me</a>
+          <a href="https://wpeters.me/" target="_blank" class="dark:text-cool-gray-50 hover:underline">wpeters.me</a>
         </div>
       </div>
     </div>
