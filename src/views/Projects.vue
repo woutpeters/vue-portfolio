@@ -3,7 +3,7 @@
     <section class="bg-cool-gray-50 dark:bg-blue-gray-800">
     <img src="@/assets/images/bg-header.png" class="w-screen absolute" alt="Header Backgroud">
       <div class="container relative flex flex-col items-start py-16">
-        <div class="w-64">
+        <div class="w-64 max-w-full">
           <img src="@/assets/images/artwork/hero-projects.png" class="object-cover object-center" alt="Hero 404">
         </div>
         <div class="text-left">

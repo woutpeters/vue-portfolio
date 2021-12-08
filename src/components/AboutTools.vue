@@ -8,7 +8,7 @@
       <Carousel v-if="slider.length" :settings="settings" :breakpoints="breakpoints" :autoplay="4000" :wrap-around="true">
         <Slide v-for="slide in slider" :key="slide">
           <div :id="slide.id" class="carousel__item w-full bg-teal-500 p-4 sm:p-8 items-center rounded-lg">
-            <div class="w-8 sm:w-16 md:w-24 mx-auto pb-4">
+            <div class="w-12 sm:w-16 md:w-24 mx-auto pb-4">
               <svg viewBox="0 0 128 128"><path :d="slide.svg" :fill="slide.color" /></svg>
             </div>
             <p class="leading-relaxed text-cool-gray-50">{{slide.name}}</p>
