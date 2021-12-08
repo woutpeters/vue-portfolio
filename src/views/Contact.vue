@@ -4,7 +4,7 @@
     <div class="container py-16 flex flex-col md:flex-row md:gap-12 lg:gap-24">
       <div class="md:w-1/2 lg:w-1/3 flex flex-col md:mr-auto w-full mb-16 md:mb-0">
         <div class="w-64">
-          <img src="@/assets/images/artwork/hero-about.png" class="object-cover object-center" alt="Hero about">
+          <img src="@/assets/images/artwork/hero-contact.png" class="object-cover object-center" alt="Hero about">
         </div>
         <h2 class="text-3xl sm:text-4xl text-cool-gray-600 dark:text-cool-gray-50 mb-2 font-semibold">Neem contact op!</h2>
         <p class="leading-relaxed mb-5 text-cool-gray-400">Stuur een bericht naar info@woutpeters.nl of gebruik onderstaand contact formulier:</p>

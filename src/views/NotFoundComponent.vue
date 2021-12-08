@@ -9,7 +9,7 @@
         <h2 class="text-3xl sm:text-4xl text-cool-gray-600 dark:text-cool-gray-50 mb-3 font-semibold">Sorry, de pagina die u zoekt kan niet worden gevonden</h2>
         <p class="sm:text-xl text-cool-gray-400 mb-16 leading-relaxed">We hebben ons best gedaan, maar het lijkt erop dat deze pagina niet (meer) bestaat of misschien verhuisd is.</p>
         <div class="flex justify-center">
-          <router-link class="btn btn-primary" :to="{name: 'home'}">Terug naar de homepage</router-link>
+          <router-link class="btn btn-primary text-lg" :to="{name: 'home'}">Terug naar de homepage</router-link>
         </div>
       </div>
     </div>
