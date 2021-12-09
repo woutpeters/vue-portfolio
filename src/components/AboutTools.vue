@@ -1,20 +1,22 @@
 <template>
-  <section class="bg-white dark:bg-blue-gray-800 dark:bg-opacity-95">
-    <div class="container py-16">
-      <div class="text-center mb-8">
-        <h2 class="text-3xl sm:text-4xl font-semibold mb-3 text-cool-gray-600 dark:text-cool-gray-50">Front-end stack</h2>
-        <p class="sm:text-xl text-cool-gray-400">Tools en scripttalen die ik gebruik voor mijn projecten</p>
-      </div>
-      <Carousel v-if="slider.length" :settings="settings" :breakpoints="breakpoints" :autoplay="4000" :wrap-around="true">
-        <Slide v-for="slide in slider" :key="slide">
-          <div :id="slide.id" class="carousel__item w-full bg-teal-500 p-4 sm:p-8 items-center rounded-lg">
-            <div class="w-12 sm:w-16 md:w-24 mx-auto pb-4">
-              <svg viewBox="0 0 128 128"><path :d="slide.svg" :fill="slide.color" /></svg>
+  <section class="bg-white">
+    <div class="dark:bg-blue-gray-800 dark:bg-opacity-95">
+      <div class="container py-16">
+        <div class="text-center mb-8">
+          <h2 class="text-3xl sm:text-4xl font-semibold mb-3 text-cool-gray-600 dark:text-cool-gray-50">Front-end stack</h2>
+          <p class="sm:text-xl text-cool-gray-400">Tools en scripttalen die ik gebruik voor mijn projecten</p>
+        </div>
+        <Carousel v-if="slider.length" :settings="settings" :breakpoints="breakpoints" :autoplay="4000" :wrap-around="true">
+          <Slide v-for="slide in slider" :key="slide">
+            <div :id="slide.id" class="carousel__item w-full bg-teal-500 p-4 sm:p-8 items-center rounded-lg">
+              <div class="w-12 sm:w-16 md:w-24 mx-auto pb-4">
+                <svg viewBox="0 0 128 128"><path :d="slide.svg" :fill="slide.color" /></svg>
+              </div>
+              <p class="leading-relaxed text-cool-gray-50">{{slide.name}}</p>
             </div>
-            <p class="leading-relaxed text-cool-gray-50">{{slide.name}}</p>
-          </div>
-        </Slide>
-      </Carousel>
+          </Slide>
+        </Carousel>
+      </div>
     </div>
   </section>
 </template>
