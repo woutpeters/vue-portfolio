@@ -4,7 +4,7 @@
     <img src="@/assets/images/bg-header.png" class="w-screen absolute" alt="Header Backgroud">
       <div class="container relative flex flex-col items-start py-16">
         <div class="w-64 max-w-full">
-          <img src="@/assets/images/artwork/hero-projects.png" class="object-cover object-center" alt="Hero 404">
+          <img src="@/assets/images/artwork/hero-projects.png" class="object-cover object-center" alt="Hero projects">
         </div>
         <div class="text-left">
           <h2 class="text-3xl sm:text-4xl text-cool-gray-600 dark:text-cool-gray-50 mb-2 font-semibold">Project Portfolio</h2>

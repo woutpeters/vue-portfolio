@@ -4,7 +4,7 @@ const colors = require('tailwindcss/colors');
 module.exports = {
   purge: {
     enabled: true,
-    content: ['./src/**/*.vue','./src/**/*.js','./src/**/*.jsx','./src/**/*.html','./src/**/*.md',], 
+    content: ['./src/**/*.vue','./src/**/*.js','./src/**/*.jsx','./src/**/*.html','./src/**/*.md',],
     options: {
       safelist: [/^carousel/],
     }
