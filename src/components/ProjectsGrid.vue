@@ -14,7 +14,7 @@
           </router-link>
         </transition-group>
         <div class="mt-10 sm:mt-16 flex justify-center">
-          <button v-if="showMore" @click="loadMore" class="btn btn-primary text-lg">Meer projecten</button>
+          <button @click="loadMore" class="btn btn-primary text-lg disabled:opacity-50 disabled:cursor-not-allowed" :disabled="showMore ? false : true">Meer projecten</button>
         </div>
       </div>
     </div>
@@ -45,7 +45,7 @@ export default {
     loadMore() {
       this.projectsToShow += this.projectsToAdd;
       this.showMore = this.projectsToShow < this.projects.length;
-      this.updateKey += 1;
+      setTimeout(() => this.updateKey += 1, 1000);
     }
   },
   mounted() {
