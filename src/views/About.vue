@@ -1,7 +1,7 @@
 <template>
   <main class="bg-cool-gray-50 dark:bg-blue-gray-800">
     <img src="@/assets/images/bg-header.png" class="w-screen absolute" alt="Header Backgroud">
-    <div class="container py-16 flex flex-col md:flex-row md:gap-12 lg:gap-24">
+    <div class="container relative py-16 flex flex-col md:flex-row md:gap-12 lg:gap-24">
       <div class="sm:w-3/4 flex flex-col md:items-start">
         <div class="w-64 max-w-full">
           <img src="@/assets/images/artwork/hero-about.png" class="object-cover object-center" alt="Hero about">
@@ -13,7 +13,7 @@
         </div>
       </div>
       <div class="w-3/5 sm:w-1/2">
-        <img src="@/assets/images/profile.jpg" class="rounded-xl w-96 ml-auto object-cover object-center shadow" alt="Hero image">
+        <img src="@/assets/images/profile.jpg" class="rounded-xl w-96 ml-auto object-cover object-center shadow" alt="Profile image">
       </div>
     </div>
   </main>
