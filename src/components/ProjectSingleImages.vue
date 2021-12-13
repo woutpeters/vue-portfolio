@@ -2,15 +2,10 @@
   <section class="bg-cool-gray-50 dark:bg-blue-gray-800 py-16">
     <div class="container">
       <h2 class="text-xl sm:text-2xl text-cool-gray-600 dark:text-cool-gray-50 mb-6 font-semibold">Screenshots</h2>
-      <div class="sm:flex gap-8 mb-16">
-        <div class="flex w-full mb-4 sm:mb-0">
+      <div class="flex flex-col sm:flex-row gap-8 mb-16">
+        <div class="flex w-full" v-for="(image, i) in project.screenshot" :key="i">	
           <div class="rounded-lg shadow h-96 w-full overflow-hidden">
-            <img class="object-cover object-center h-full w-full" :src="require(`@/assets/images/${singleProjectImages.image}`)" :alt="singleProjectImages.title">
-          </div>
-        </div>
-        <div class="flex w-full">
-          <div class="rounded-lg shadow h-96 w-full overflow-hidden">
-            <img class="object-cover object-center h-full w-full" :src="require(`@/assets/images/${singleProjectImages.image}`)" :alt="singleProjectImages.title">
+            <img class="object-cover object-center h-full w-full" :src="require(`@/assets/images/${image.image}`)" :alt="image.title">
           </div>
         </div>
       </div>
@@ -24,7 +19,7 @@
 <script>
 export default {
   name: 'SingleProjectImages',
-  props: ['singleProjectImages'],
+  props: ['project'],
 };
 </script>
 

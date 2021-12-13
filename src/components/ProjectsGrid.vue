@@ -23,14 +23,14 @@
 
 <script>
 import feather from 'feather-icons';
-import projectList from "@/assets/data/list.json";
+import info from "@/assets/data/info";
 
 export default {
   name: 'Projects',
   data() {
     return  {
       updateKey: 0,
-      projects: projectList,
+      projects: info.portfolio,
       projectsToShow: 4,
       projectsToAdd: 4,
       showMore: true

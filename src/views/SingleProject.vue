@@ -1,13 +1,13 @@
 <template>
   <main>
-    <ProjectSingleHeader :singleProjectHeader="project" />
-    <ProjectSingleInfo :singleProjectInfo="project" />
-    <ProjectSingleImages v-if="project.title" :singleProjectImages="project" />
+    <ProjectSingleHeader :project="project" />
+    <ProjectSingleInfo :project="project" />
+    <ProjectSingleImages v-if="project.screenshot" :project="project" />
   </main>
 </template>
 
 <script>
-import projectList from "@/assets/data/list.json";
+import info from "@/assets/data/info";
 import ProjectSingleHeader from '@/components/ProjectSingleHeader.vue';
 import ProjectSingleInfo from '@/components/ProjectSingleInfo.vue';
 import ProjectSingleImages from '@/components/ProjectSingleImages.vue';
@@ -23,7 +23,7 @@ export default {
   props: ['slug'],
 	data() {
     return {
-      project: projectList.filter((project) => project.slug == this.slug)[0],
+      project: info.portfolio.filter((project) => project.slug == this.slug)[0],
     }
   },
   mounted() {
