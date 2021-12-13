@@ -3,8 +3,8 @@
     <img src="@/assets/images/bg-header.png" class="w-screen absolute" alt="Header Backgroud">
     <div class="container relative py-16 flex flex-col md:flex-row md:gap-12 lg:gap-24">
       <div class="sm:w-3/4 flex flex-col md:items-start">
-        <div class="w-64 max-w-full">
-          <img src="@/assets/images/artwork/hero-about.png" class="object-cover object-center" alt="Hero about">
+        <div class="w-64 max-w-full px-8 py-6">
+          <img src="@/assets/images/artwork/hero-about.svg" class="object-cover object-center" alt="Hero about">
         </div>
         <div class="text-left">
           <h2 class="text-3xl sm:text-4xl text-cool-gray-600 dark:text-cool-gray-50 mb-2 font-semibold">Aangenaam!</h2>
