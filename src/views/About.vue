@@ -17,14 +17,17 @@
       </div>
     </div>
   </main>
+  <AboutCounter />
   <AboutTools />
 </template>
 
 <script>
+import AboutCounter from '@/components/AboutCounter';
 import AboutTools from '@/components/AboutTools';
 export default {
   name: 'About',
   components: {
+    AboutCounter,
 		AboutTools
 	},
 }

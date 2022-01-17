@@ -50,7 +50,7 @@ export default {
           id: 4,
           name: 'LinkedIn',
           icon: 'linkedin',
-          url: 'https://www.linkedin.com/in/wout-peters-69531457',
+          url: 'https://www.linkedin.com/in/woutpeters/',
         },
       ],
     };
